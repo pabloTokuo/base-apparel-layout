@@ -19,7 +19,8 @@ Technologies used to create the layout
 
 # Project Live 🏁
 
-Project link: <a>https://pablotokuo.github.io/base-apparel-layout/</a> 
+Project link: <a>https://pablotokuo.github.io/base-apparel-layout/</a>
 
 # FrontEnd Mentor Challenger
+
 <a href='https://github.com/pabloTokuo'>by Pablo Tokuo</a> 😁
