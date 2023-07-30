@@ -1,0 +1,307 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  background: url('../images/bg-pattern-desktop.svg') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.container-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 830px;
+  margin: 76px auto;
+  height: 650px;
+  /* padding: 4.6875rem 0 0 12.9375rem; */
+}
+
+.container-name {
+  position: relative;
+}
+
+.container-name h2 {
+  width: 165px;
+  color: #423A3A;
+  line-height: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-left: 40px;
+}
+
+.container-name h2::after {
+  content: '';
+  display: block;
+  width: 31px;
+  height: 31px;
+  background-color: #fff;
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  border: 4px solid #F8BFBF;
+  border-radius: 50%;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 6.5rem;
+}
+
+.container-info h1 {
+  color: #CE9898;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1rem;
+  line-height: 4.4375rem;
+}
+
+.container-info span {
+  color: #423A3A;
+  font-weight: 600;
+  letter-spacing: 1rem;
+}
+
+.p-info {
+  color: #F8BFBF;
+  max-width: 443px;
+  line-height: 1.75rem;
+  margin-top: 2rem;
+}
+
+.container-form {
+  display: flex;
+  position: relative;
+}
+
+.container-form input {
+  background: transparent;
+  margin-top: 2.5rem;
+  border: 2px solid #F8BFBF;
+  border-radius: 28px;
+  padding: 0.9375rem 13.0625rem 0.8125rem 2rem;
+  position: relative;
+  width: 448px;
+}
+
+
+::placeholder {
+  color: #F8BFBF;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container-form button {
+  height: 56px;
+  width: 100px;
+  border: none;
+  border-radius: 28px;
+  background-image: linear-gradient(to right, #F8BFBF, #EE8B8B);
+  color: #fff;
+  top: 40px;
+  left: 350px;
+  position: absolute;
+  box-shadow: 0px 6px 20px 0px #C66E6E;
+  cursor: pointer;
+}
+
+.container-form button:hover {
+  background: #F8BFBF;
+}
+
+.container-form button > img {
+  position: absolute;
+  right: 42px;
+  top: 16px;
+}
+
+.input-img {
+  display: none;
+  position: absolute;
+  right: 115px;
+  top: 53px;
+}
+
+.container-image {
+  height: 100%;
+}
+
+.container-image img {
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.invalid-email {
+  color: #F96464;
+  font-size: 13px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .container {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  }
+
+  .container-all {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container-content {
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container-name {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .container-image {
+    margin-top: 2rem;
+    width: 375px;
+    height: 250px;
+  }
+
+  .container-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-info {
+    padding: 0 0.7rem 0 0.7rem;
+    margin: 3rem auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-info h1 {
+    font-size: 2.5rem;
+    line-height: 2.62rem;
+    letter-spacing: 0.62rem;
+  }
+
+  .container-info span {
+    letter-spacing: 0.62rem;
+  }
+
+  .p-info {
+    width: 340px;
+  }
+
+  .container-form {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-form input {
+    margin: 2rem 0 0 0;
+    width: 95%;
+    padding: 0.7375rem 4.0625rem 0.5125rem 1rem;
+  }
+
+  .container-form button {
+    width: 64px;
+    height: 48px;
+    top: 32px;
+    left: 269px;
+  }
+
+  .container-form button > img {
+    right: 25px;
+    top: 12px;
+  }
+
+  .invalid-email {
+    margin-left: -129px;
+    margin-top: 1px;
+  }
+
+  .input-img {
+    top: 43px;
+    right: 88px;
+  }
+}

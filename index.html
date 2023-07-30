@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-all">
+      <div class="container-content ">
+        <div class="container-name">
+          <img src="images/logo.svg" alt="Hero Logo">
+        </div>
+        <div class="container-image mobile">
+          <img class="mobile" src="images/hero-mobile.jpg" alt="Hero Image">
+        </div>
+        <div class="container-info">
+          <h1>We're <span><br>Coming <br>Soon</span></h1>
+          <p class="p-info">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          <div class="container-form">
+            <input type="text" data-js="email-verify" placeholder="Email Adress" required>
+            <img class="input-img" src="images/icon-error.svg" data-js="invalid-image" alt="">
+            <button type="submit" data-js="submit-btn"><img src="images/arrow.svg" alt="Arrow Image"></button>
+          </div>
+          <p class="invalid-email" data-js="invalid-message"></p>
+        </div>
+      </div>
+      <div class="container-image desktop">
+        <img src="images/hero-desktop.jpg" alt="Hero Image">
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
