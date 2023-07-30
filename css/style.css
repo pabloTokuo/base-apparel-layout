@@ -248,10 +248,12 @@ input:focus {
   .container-all {
     display: grid;
     grid-template-columns: 1fr;
+    height: 100%;
+    min-height: 100vh;
   }
 
   .container-content {
-    height: 100vh;
+    height: auto;
     margin: 0;
   }
 
